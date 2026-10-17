@@ -1,0 +1,16 @@
+when:
+  - event: manual
+
+skip_clone: true
+
+labels:
+  demo: c3
+  kind: cpu
+
+steps:
+  run:
+    image: pwsh
+    commands:
+      - Write-Output "y1 start"
+      - Start-Sleep -Seconds 1
+      - Write-Output "y1 done"
